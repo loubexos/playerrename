@@ -1,0 +1,14 @@
+# Name, den alle maskierten Spieler erhalten (max. 16 Zeichen)
+display-name: "Player"
+
+# Wie die Bypass-Permission (playerrename.bypass) wirkt:
+#   TARGET = Spieler MIT Permission werden nicht umbenannt (alle sehen ihren echten Namen)
+#   VIEWER = Spieler MIT Permission sehen bei allen die echten Namen
+#   BOTH   = beides zusammen
+bypass-mode: TARGET
+
+# Namen auch im Chat maskieren
+mask-chat: true
+
+# Namen in Join-/Quit-Nachrichten maskieren (wirkt nicht bei bypass-mode VIEWER)
+mask-join-quit: true

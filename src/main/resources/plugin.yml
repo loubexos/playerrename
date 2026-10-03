@@ -1,0 +1,19 @@
+name: PlayerRename
+version: '1.0.0'
+main: de.loubexos.playerrename.PlayerRenamePlugin
+api-version: '26.3'
+description: Benennt alle Spieler per PacketEvents in "Player" um (ausser mit Bypass-Permission)
+depend: [packetevents]
+commands:
+  playerrename:
+    description: Verwaltet das PlayerRename-Plugin
+    usage: /<command> reload
+    aliases: [prn]
+    permission: playerrename.admin
+permissions:
+  playerrename.bypass:
+    description: Spieler wird nicht umbenannt (bzw. sieht echte Namen, je nach bypass-mode)
+    default: op
+  playerrename.admin:
+    description: Darf /playerrename reload nutzen
+    default: op
